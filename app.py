@@ -26,7 +26,7 @@ def main():
 
     @app.post("/generate", response_class=HTMLResponse)
     async def generate_post(
-        name: str = Form(...), detail: str = Form(...), photo: UploadFile = File(...)
+        name: str = Form(...), drg: str = Form(...), piranti: str = Form(...), date: str = Form(...), detail: str = Form(...), photo: UploadFile = File(...)
     ):
         try:
             photo = await photo.read()
@@ -37,6 +37,9 @@ def main():
                 {
                     "uuid": uuid_data,
                     "name": name,
+                    "drg": drg,
+                    "piranti": piranti,
+                    "date": date,
                     "detail": detail,
                     "photo": base64_string,
                 }

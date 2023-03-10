@@ -55,23 +55,28 @@ def return_input_users_html():
 <html>
 <head>
     <title>Form Input Data</title>
-    <style>
-        .center {{
-            text-align: center;
-        }}
-    </style>
 </head>
-<body style='background-color:#E6E6FA'>
-    <h1 style='text-align: center'>Form Input Data</h1>
-    <form action="/generate" method="post" enctype="multipart/form-data">
-    <label style='text-align: center' for="name">Nama:</label>
-    <input style='text-align: center' type="text" id="name" name="name"><br><br>
+<body style='align-items: center; display: flex; justify-content: center; flex-direction: column; padding: 10px'>
+    <h1 style='text-align: center'>Form Input Data Pasien</h1>
 
-    <label for="detail">Keterangan:</label>
-    <textarea id="detail" name="detail" rows="4" cols="50"></textarea><br><br>
+    <form style='background-color: #f2f2f2; padding: 20px; border-radius: 10px; width: 100%;' action="/generate" method="post" enctype="multipart/form-data">
+    <label style='display: block; color: #555' for="name">Nama pasien:</label>
+    <input style='width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: none;' type="text" id="name" name="name"><br><br>
 
-    <label for="photo">Gambar:</label>
-    <input type="file" id="photo" name="photo"><br><br>
+    <label style='display: block; color: #555' for="drg">Nama drg:</label>
+    <input style='width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: none;' type="text" id="drg" name="drg"><br><br>
+
+    <label style='display: block; color: #555' for="piranti">Jenis Piranti:</label>
+    <input style='width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: none;' type="text" id="piranti" name="piranti"><br><br>
+
+    <label style='display: block; color: #555' for="date">Tanggal pesan:</label>
+    <input style='width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: none;' type="text" id="date" name="date"><br><br>
+
+    <label style='display: block; color: #555' for="detail">Keterangan:</label>
+    <textarea style='width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: none;' id="detail" name="detail" rows="4" cols="50"></textarea><br><br>
+
+    <label style='display: block; color: #555' for="photo">Gambar:</label>
+    <input style='width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: none;' type="file" id="photo" name="photo"><br><br>
 
     <input type="submit" value="Submit">
     </form>
