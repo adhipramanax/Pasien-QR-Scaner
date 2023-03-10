@@ -32,18 +32,16 @@ def return_users_html(data):
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Form Input Data</title>
-    <style>
-        .center {{
-            text-align: center;
-        }}
-    </style>
-        
+    <title>Form Input Data</title>       
 </head>
-<body class="center">
-    <h1>Name: {data[0]["name"]}</h1>
-    <h1>Detail: {data[0]["detail"]}</h1>
-    <image src="data:image/png;base64,{data[0]["photo"]}" />
+<body style='align-items: center;'>
+    <h1 style='text-align: center;'>Data Pasien</h1>
+    <h1 style='text-align: center; display: block; color: #555'>Nama pasien: {data[0]["name"]}</h1>
+    <image style='align-items: center; text-align: center; width: 200px' src="data:image/png;base64,{data[0]["photo"]}" />
+    <h1 style='text-align: center; display: block; color: #555'>Nama drg: {data[0]["drg"]}</h1>
+    <h1 style='text-align: center; display: block; color: #555'>Jenis piranti: {data[0]["piranti"]}</h1>
+    <h1 style='text-align: center; display: block; color: #555'>Tanggal: {data[0]["date"]}</h1>
+    <h1 style='text-align: center; display: block; color: #555'>Detail: {data[0]["detail"]}</h1>
 </body>
 </html>
 """
@@ -78,7 +76,7 @@ def return_input_users_html():
     <label style='display: block; color: #555' for="photo">Gambar:</label>
     <input style='width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: none;' type="file" id="photo" name="photo"><br><br>
 
-    <input type="submit" value="Submit">
+    <input style='width: 100%; background-color: #007bff; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;' type="submit" value="Submit">
     </form>
 </body>
 </html>
