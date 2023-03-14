@@ -16,7 +16,7 @@ from html_pages import (
 )
 
 PORT = 8000
-URL = f"http://localhost:{PORT}"
+URL = f"157.245.152.163:{PORT}"
 
 
 def main():
