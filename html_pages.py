@@ -93,7 +93,7 @@ def return_input_users_html():
     <input style='font-size: 3rem; width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: none;' type="text" id="piranti" name="piranti"><br><br>
 
     <label style='font-size: 3rem; display: block; color: #555' for="date">Tanggal pesan:</label>
-    <input style='font-size: 3rem; width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: none;' type="text" id="date" name="date"><br><br>
+    <input style='font-size: 3rem; width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: none;' type="date" id="date" name="date"><br><br>
 
     <label style='font-size: 3rem; display: block; color: #555' for="detail">Keterangan:</label>
     <textarea style='font-size: 3rem; width: 100%; padding: 10px; margin-bottom: 20px; border-radius: 5px; border: none;' id="detail" name="detail" rows="4" cols="50"></textarea><br><br>
