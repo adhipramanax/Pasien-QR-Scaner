@@ -80,7 +80,7 @@ def return_users_html(data):
                     <td>{data[0]["job"]}</td>
                 </tr>
                 <tr>
-                    <td>Tanggal Pembuatan</td>
+                    <td>Tanggal Selesai</td>
                     <td>:</td>
                     <td>{data[0]["send"]}</td>
                 </tr>
