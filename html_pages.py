@@ -140,7 +140,7 @@ def return_input_users_html():
     </div>
     
     <div class="mb-3">
-        <label for="order" class="form-label">Tanggal Pembuatan:</label>
+        <label for="order" class="form-label">Tanggal Selesai:</label>
         <input class="form-control fs-1" type="date" id="order" name="order" />
     </div>
 
