@@ -16,7 +16,7 @@ from html_pages import (
 )
 
 PORT = 8000
-URL = 'http://157.245.152.163:8000'
+URL = 'http://165.232.164.46:8000'
 
 def main():
     # Initialize FastAPI
